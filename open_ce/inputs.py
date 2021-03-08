@@ -20,7 +20,7 @@ import os
 
 import argparse
 from enum import Enum, unique
-from open_ce import utils
+import utils
 
 class OpenCEFormatter(argparse.ArgumentDefaultsHelpFormatter):
     """
