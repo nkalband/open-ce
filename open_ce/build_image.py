@@ -19,9 +19,9 @@
 
 import os
 import shutil
-from open_ce import utils
-from open_ce.inputs import Argument
-from open_ce.errors import OpenCEError, Error
+import utils
+from inputs import Argument
+from errors import OpenCEError, Error
 
 COMMAND = 'image'
 DESCRIPTION = 'Run Open-CE tools within a container'

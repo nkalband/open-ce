@@ -21,9 +21,9 @@ import datetime
 import platform
 import argparse
 
-from open_ce import utils
-from open_ce.errors import OpenCEError, Error
-from open_ce.inputs import Argument
+import utils
+from errors import OpenCEError, Error
+from inputs import Argument
 
 OPEN_CE_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "."))
 BUILD_IMAGE_NAME = "builder"

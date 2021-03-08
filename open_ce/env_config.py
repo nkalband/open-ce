@@ -19,8 +19,8 @@
 import os
 from enum import Enum, unique, auto
 
-from open_ce import utils
-from open_ce.errors import OpenCEError, Error
+import utils
+from errors import OpenCEError, Error
 
 @unique
 class Key(Enum):
@@ -59,7 +59,7 @@ _ENV_CONFIG_SCHEMA = {
 def _validate_config_file(env_file, variants):
     '''Perform some validation on the environment file after loading it.'''
     # pylint: disable=import-outside-toplevel
-    from open_ce import conda_utils
+    import conda_utils
 
     try:
         if utils.is_url(env_file):

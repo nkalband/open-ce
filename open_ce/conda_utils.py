@@ -20,7 +20,7 @@ import pathlib
 
 # Disabling pylint warning "cyclic-import" locally here doesn't work. So, added it in .pylintrc
 # according to https://github.com/PyCQA/pylint/issues/59
-from open_ce.utils import validate_dict_schema, check_if_conda_build_exists # pylint: disable=cyclic-import
+from utils import validate_dict_schema, check_if_conda_build_exists # pylint: disable=cyclic-import
 
 check_if_conda_build_exists()
 
