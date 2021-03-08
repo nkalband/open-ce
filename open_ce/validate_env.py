@@ -18,10 +18,10 @@
 # *****************************************************************
 """
 
-from open_ce import env_config
-from open_ce import utils
-from open_ce.inputs import Argument
-from open_ce.errors import OpenCEError, Error
+import env_config
+import utils
+from inputs import Argument
+from errors import OpenCEError, Error
 
 COMMAND = 'env'
 
